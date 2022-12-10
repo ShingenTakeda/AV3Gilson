@@ -1,8 +1,11 @@
 // app.ts
 import { Application } from "https://deno.land/x/oak@v10.5.1/mod.ts";
-import { viewEngine, dejsEngine, oakAdapter , etaEngine} from "https://deno.land/x/view_engine@v10.5.1c/mod.ts"
+import { viewEngine, oakAdapter , etaEngine} from "https://deno.land/x/view_engine@v10.5.1c/mod.ts"
+import { Test } from "./js/entry.js"
 
 const app = new Application();
+
+Test();
 
 app.use(
   viewEngine(oakAdapter, etaEngine, {
