@@ -1,4 +1,4 @@
-class Selecao
+export class Selecao
 {
     constructor(selecao, grupo,pontos, saldoGols,jogosGanhos)
     {
